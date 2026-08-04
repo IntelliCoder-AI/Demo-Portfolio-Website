@@ -1,69 +1,111 @@
-import Image from "next/image";
+import { Metadata } from 'next';
+import Link from 'next/link';
+import { HeroSection } from '@/components/features/HeroSection';
+import { TechStack } from '@/components/features/TechStack';
+import { ProjectCard } from '@/components/features/ProjectCard';
+import { StatCard } from '@/components/features/StatCard';
+import { TestimonialSlider } from '@/components/features/TestimonialSlider';
+import { Section } from '@/components/layout/Section';
+import { Button } from '@/components/ui/Button';
+import { projectsData } from '@/data/projects';
+import { testimonialsData } from '@/data/testimonials';
+import { ArrowRight, Code, Users, Zap } from 'lucide-react';
+
+export const metadata: Metadata = {
+  title: 'Radhe | Software Engineer & Python Full Stack Developer',
+  description: 'Passionate Software Engineer specializing in Python, React, Next.js, TypeScript, FastAPI, AWS, and AI-powered applications.',
+};
 
 export default function Home() {
+  const featuredProjects = projectsData.filter((project) => project.featured).slice(0, 3);
+
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert h-5 w-[100px]"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the{" "}
-            <code className="rounded bg-black/[.06] px-1.5 py-0.5 font-mono text-[0.9em] dark:bg-white/[.08]">
-              page.tsx
-            </code>{" "}
-            file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
+    <>
+      <HeroSection />
+      
+      <TechStack />
+
+      <Section id="featured-projects" className="bg-slate-50 dark:bg-[#0F1D32]">
+        <div className="mb-12 flex flex-col items-center justify-between gap-4 md:flex-row">
+          <div>
+            <h2 className="text-3xl font-bold tracking-tight text-slate-900 dark:text-slate-100 sm:text-4xl">
+              Featured Work
+            </h2>
+            <p className="mt-2 text-lg text-slate-600 dark:text-slate-400">
+              A selection of my best projects and applications.
+            </p>
+          </div>
+          <Link href="/projects">
+            <Button variant="outline" className="group">
+              View All Projects
+              <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
+            </Button>
+          </Link>
+        </div>
+
+        <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+          {featuredProjects.map((project, index) => (
+            <ProjectCard key={project.id} project={project} />
+          ))}
+        </div>
+      </Section>
+
+      <Section id="stats" className="border-y border-slate-200 dark:border-slate-800">
+        <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+          <StatCard
+            label="Years Experience"
+            value="5+"
+            icon={<Code className="h-6 w-6" />}
+          />
+          <StatCard
+            label="Projects Delivered"
+            value="30+"
+            icon={<Zap className="h-6 w-6" />}
+          />
+          <StatCard
+            label="Happy Clients"
+            value="15+"
+            icon={<Users className="h-6 w-6" />}
+          />
+          <StatCard
+            label="Open Source"
+            value="500+"
+            icon={<Code className="h-6 w-6" />}
+          />
+        </div>
+      </Section>
+
+      <Section id="testimonials" className="bg-white dark:bg-[#0F1D32]">
+        <div className="mb-12 text-center">
+          <h2 className="text-3xl font-bold tracking-tight text-slate-900 dark:text-slate-100 sm:text-4xl">
+            Client Testimonials
+          </h2>
+          <p className="mt-2 text-lg text-slate-600 dark:text-slate-400">
+            What people say about working with me.
           </p>
         </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert h-[14px] w-4"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={14}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
+        
+        <TestimonialSlider testimonials={testimonialsData} />
+      </Section>
+
+      <Section id="cta" className="bg-slate-50 dark:bg-slate-900/50">
+        <div className="flex flex-col items-center text-center">
+          <h2 className="text-3xl font-bold tracking-tight text-slate-900 dark:text-slate-100 sm:text-4xl">
+            Let's Work Together
+          </h2>
+          <p className="mt-4 max-w-2xl text-lg text-slate-600 dark:text-slate-400">
+            I'm currently available for freelance work and open to new full-time opportunities.
+            If you have a project that needs some creative touch, I'd love to hear about it.
+          </p>
+          <div className="mt-8">
+            <Link href="/contact">
+              <Button size="lg" className="bg-amber-600 hover:bg-amber-700 text-white dark:bg-[#D4A843] dark:hover:bg-[#B8860B] dark:text-slate-900">
+                Get In Touch
+              </Button>
+            </Link>
+          </div>
         </div>
-      </main>
-    </div>
+      </Section>
+    </>
   );
 }
