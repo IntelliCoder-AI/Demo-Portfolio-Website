@@ -1,0 +1,194 @@
+﻿Diagnose log at 2026-08-04T20:07:17Z
+
+AppPath: D:\Git\mingw64\bin\git-credential-manager.exe
+InstallDir: D:\Git\mingw64\bin\
+Version: 2.6.1+786ab03440ddc82e807a97c0e540f5247e44cec6
+
+------------
+Diagnostic: Environment
+Skipped: False
+Success: True
+Exception: None
+Log:
+OSType: Windows
+OSVersion: 10.0 (build 26200)
+Reading environment variables... OK
+ Variables:
+HOMEPATH=\Users\johnd
+DriverData=C:\Windows\System32\Drivers\DriverData
+COMPUTERNAME=JOHN
+GIT_TRACE2_PARENT_SID=e85c88d5-6ca6-414b-b021-3470655daffb
+MAVEN_HOME=C:\Program Files\apache-maven-3.9.11
+OneDrive=C:\Users\johnd\OneDrive
+TMP=C:\Users\johnd\AppData\Local\Temp
+HOME=C:\Users\johnd
+PROCESSOR_REVISION=9a04
+USERDOMAIN_ROAMINGPROFILE=JOHN
+PATHEXT=.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.CPL
+GIT_ASKPASS=d:\Kiro\resources\app\extensions\git\dist\askpass.sh
+GIT_EXEC_PATH=D:/Git/mingw64/libexec/git-core
+EFC_17132_4126798990=1
+LOCALAPPDATA=C:\Users\johnd\AppData\Local
+MSYSTEM=MINGW64
+TERM=xterm-256color
+TERM_PROGRAM=kiro
+VSCODE_PYTHON_AUTOACTIVATE_GUARD=1
+COLORTERM=truecolor
+JAVA_HOME=C:\Program Files\Java\jdk-21
+USERDOMAIN=JOHN
+ProgramFiles(x86)=C:\Program Files (x86)
+EFC_17132_1592913036=1
+Path=D:/Git/mingw64/libexec/git-core;D:\Git\mingw64\bin;D:\Git\usr\bin;C:\Users\johnd\bin;C:\Program Files\WindowsApps\Microsoft.PowerShell_7.6.4.0_x64__8wekyb3d8bbwe;C:\Program Files\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;D:\cursor\resources\app\bin;D:\Git\cmd;C:\Program Files\nodejs\;C:\Program Files\apache-maven-3.9.11\bin;C:\Program Files\Java\jdk-21\bin;C:\MinGW\bin;C:\Strawberry\c\bin;C:\Strawberry\perl\site\bin;C:\Strawberry\perl\bin;D:\;C:\Program Files\Amazon\AWSCLIV2\;C:\Program Files\Docker\Docker\resources\bin;C:\Users\johnd\AppData\Local\Programs\Python\Python312\Scripts\;C:\Users\johnd\AppData\Local\Programs\Python\Python312\;C:\Users\johnd\.local\bin;C:\Users\johnd\.cargo\bin;C:\Users\johnd\AppData\Local\Programs\Python\Python314\Scripts\;C:\Users\johnd\AppData\Local\Programs\Python\Python314\;C:\Users\johnd\AppData\Local\Programs\Python\Launcher\;C:\Users\johnd\AppData\Local\Microsoft\WindowsApps;D:\Windsurf\bin;D:\Microsoft VS Code\bin;D:\IntelliJ IDEA Community Edition 2025.2.2\bin;C:\Users\johnd\AppData\Roaming\npm;D:\Antigravity\bin;C:\Users\johnd\AppData\Local\Programs\Ollama;C:\Users\johnd\.lmstudio\bin;C:\Users\johnd\AppData\Local\Kingsoft\WPS Office\12.1.0.27458\clitool;C:\Users\johnd\AppData\Local\Pandoc\;D:\MikTexX\miktex\bin\x64\;D:\Kiro\bin;D:\terraform_1.15.8_windows_amd64;
+WPSCLI_HOME=C:\Users\johnd\AppData\Local\Kingsoft\WPS Office\12.1.0.27458\clitool
+PROCESSOR_LEVEL=6
+PROCESSOR_IDENTIFIER=Intel64 Family 6 Model 154 Stepping 4, GenuineIntel
+TMPDIR=C:\Users\johnd\AppData\Local\Temp
+VSCODE_GIT_ASKPASS_EXTRA_ARGS=
+TERM_PROGRAM_VERSION=1.0.242
+VSCODE_GIT_ASKPASS_MAIN=d:\Kiro\resources\app\extensions\git\dist\askpass-main.js
+PSModulePath=C:\Users\johnd\Documents\PowerShell\Modules;C:\Program Files\PowerShell\Modules;c:\program files\windowsapps\microsoft.powershell_7.6.4.0_x64__8wekyb3d8bbwe\Modules;C:\Program Files\WindowsPowerShell\Modules;C:\WINDOWS\system32\WindowsPowerShell\v1.0\Modules
+PUBLIC=C:\Users\Public
+OPENSSL_DIR=C:\Program Files\OpenSSL-Win64
+CommonProgramFiles=C:\Program Files (x86)\Common Files
+VSCODE_INJECTION=1
+VSCODE_GIT_IPC_HANDLE=\\.\pipe\vscode-git-e9fd1a925e-sock
+CHROME_CRASHPAD_PIPE_NAME=\\.\pipe\crashpad_21616_FMVVWVYOKGMMAZCI
+NUMBER_OF_PROCESSORS=12
+PLINK_PROTOCOL=ssh
+ProgramData=C:\ProgramData
+ProgramW6432=C:\Program Files
+ProgramFiles=C:\Program Files (x86)
+VSCODE_GIT_ASKPASS_NODE=D:\Kiro\Kiro.exe
+SystemRoot=C:\WINDOWS
+__COMPAT_LAYER=DetectorsAppHealth
+SESSIONNAME=Console
+CommonProgramW6432=C:\Program Files\Common Files
+ZES_ENABLE_SYSMAN=1
+LOGONSERVER=\\JOHN
+USERPROFILE=C:\Users\johnd
+IntelliJ IDEA Community Edition=D:\IntelliJ IDEA Community Edition 2025.2.2\bin
+CommonProgramFiles(x86)=C:\Program Files (x86)\Common Files
+APPDATA=C:\Users\johnd\AppData\Roaming
+HOMEDRIVE=C:
+VBOX_MSI_INSTALL_PATH=C:\Program Files\Oracle\VirtualBox\
+USERNAME=johnd
+PROCESSOR_ARCHITEW6432=AMD64
+PROCESSOR_ARCHITECTURE=x86
+OS=Windows_NT
+ComSpec=C:\WINDOWS\system32\cmd.exe
+TEMP=C:\Users\johnd\AppData\Local\Temp
+SystemDrive=C:
+windir=C:\WINDOWS
+LANG=en_US.UTF-8
+ALLUSERSPROFILE=C:\ProgramData
+
+
+------------
+Diagnostic: File system
+Skipped: False
+Success: True
+Exception: None
+Log:
+Temporary directory is 'C:\Users\johnd\AppData\Local\Temp\'...
+Checking basic file I/O...
+Writing to temporary file 'C:\Users\johnd\AppData\Local\Temp\79b848ecae566acb94f567db'... OK
+Reading from temporary file 'C:\Users\johnd\AppData\Local\Temp\79b848ecae566acb94f567db'... OK
+Deleting temporary file 'C:\Users\johnd\AppData\Local\Temp\79b848ecae566acb94f567db'... OK
+Testing IFileSystem instance...
+UserHomePath: C:\Users\johnd
+UserDataDirectoryPath: C:\Users\johnd\.gcm
+GetCurrentDirectory(): C:\Users\johnd\Desktop\Stream-Training\Portfolio website demo
+
+------------
+Diagnostic: Networking
+Skipped: False
+Success: True
+Exception: None
+Log:
+Checking networking and HTTP stack...
+Creating HTTP client... OK
+IsNetworkAvailable: True
+Sending HEAD request to http://example.com...Sending HEAD request to https://example.com... OK
+ OK
+Acquiring free TCP port... OK
+Testing local HTTP loopback connections...
+Creating new HTTP listener for http://localhost:60662/... OK
+Waiting for loopback connection... OK
+Writing response... OK
+Waiting for response data... OK
+Loopback connection data OK
+
+------------
+Diagnostic: Git
+Skipped: False
+Success: True
+Exception: None
+Log:
+Getting Git version... OK
+Git version is '2.51.0.windows.1'
+Locating current repository...Git repository at 'C:/Users/johnd/Desktop/Stream-Training/Portfolio website demo/.git'
+ OK
+Listing all Git configuration... OK
+Git configuration:
+file:D:/Git/etc/gitconfig	diff.astextplain.textconv=astextplain
+file:D:/Git/etc/gitconfig	filter.lfs.clean=git-lfs clean -- %f
+file:D:/Git/etc/gitconfig	filter.lfs.smudge=git-lfs smudge -- %f
+file:D:/Git/etc/gitconfig	filter.lfs.process=git-lfs filter-process
+file:D:/Git/etc/gitconfig	filter.lfs.required=true
+file:D:/Git/etc/gitconfig	http.sslbackend=schannel
+file:D:/Git/etc/gitconfig	core.autocrlf=true
+file:D:/Git/etc/gitconfig	core.fscache=true
+file:D:/Git/etc/gitconfig	core.symlinks=false
+file:D:/Git/etc/gitconfig	pull.rebase=false
+file:D:/Git/etc/gitconfig	credential.helper=manager
+file:D:/Git/etc/gitconfig	credential.https://dev.azure.com.usehttppath=true
+file:D:/Git/etc/gitconfig	init.defaultbranch=master
+file:C:/Users/johnd/.gitconfig	user.name=IntelliCoder-AI
+file:C:/Users/johnd/.gitconfig	user.email=t83831615@gmail.com
+file:C:/Users/johnd/.gitconfig	http.postbuffer=524288000
+file:C:/Users/johnd/.gitconfig	credential.https://huggingface.co.provider=generic
+file:.git/config	core.repositoryformatversion=0
+file:.git/config	core.filemode=false
+file:.git/config	core.bare=false
+file:.git/config	core.logallrefupdates=true
+file:.git/config	core.symlinks=false
+file:.git/config	core.ignorecase=true
+file:.git/config	remote.origin.url=https://github.com/IntelliCoder-AI/Demo-Portfolio-Website.git
+file:.git/config	remote.origin.fetch=+refs/heads/*:refs/remotes/origin/*
+
+
+------------
+Diagnostic: Credential storage
+Skipped: False
+Success: True
+Exception: None
+Log:
+ICredentialStore instance is of type: CredentialStore
+Writing test credential... OK
+Reading test credential... OK
+Deleting test credential... OK
+
+------------
+Diagnostic: Microsoft authentication (AAD/MSA)
+Skipped: False
+Success: True
+Exception: None
+Log:
+Broker is not enabled.
+Flow type is: Auto
+Gathering MSAL token cache data... OK
+CacheDirectory: C:\Users\johnd\AppData\Local\.IdentityService
+CacheFileName: msal.cache
+CacheFilePath: C:\Users\johnd\AppData\Local\.IdentityService\msal.cache
+Creating cache helper... OK
+Verifying MSAL token cache persistence... OK
+
+------------
+Diagnostic: GitHub API
+Skipped: False
+Success: True
+Exception: None
+Log:
+Using 'https://github.com/' as API target.
+Querying '/meta' endpoint... OK
+
