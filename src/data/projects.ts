@@ -15,7 +15,7 @@ export const projectsData: Project[] = [
       { name: "AWS", icon: "aws" },
       { name: "PostgreSQL", icon: "database" }
     ],
-    image: "/images/projects/cloudsync-dashboard.webp",
+    image: "/images/projects/cloudsync-dashboard.jpg",
     liveUrl: "https://cloudsync.demo",
     githubUrl: "https://github.com/radhe-dev/cloudsync",
     featured: true,
@@ -39,7 +39,7 @@ export const projectsData: Project[] = [
       { name: "OpenAI API", icon: "bot" },
       { name: "Redis", icon: "database" }
     ],
-    image: "/images/projects/ai-content-studio.webp",
+    image: "/images/projects/ai-content-studio.jpg",
     featured: true,
     completedAt: "2024-11-20T00:00:00Z",
     highlights: [
@@ -61,7 +61,7 @@ export const projectsData: Project[] = [
       { name: "Docker", icon: "docker" },
       { name: "AWS Lambda", icon: "aws" }
     ],
-    image: "/images/projects/devflow-cli.webp",
+    image: "/images/projects/devflow-cli.jpg",
     githubUrl: "https://github.com/radhe-dev/devflow-cli",
     featured: false,
     completedAt: "2023-08-10T00:00:00Z",
@@ -84,7 +84,7 @@ export const projectsData: Project[] = [
       { name: "PostgreSQL", icon: "database" },
       { name: "Plaid API", icon: "link" }
     ],
-    image: "/images/projects/fintrack-pro.webp",
+    image: "/images/projects/fintrack-pro.jpg",
     liveUrl: "https://fintrack.app",
     featured: true,
     completedAt: "2025-01-30T00:00:00Z",
@@ -107,7 +107,7 @@ export const projectsData: Project[] = [
       { name: "AWS CDK", icon: "aws" },
       { name: "Terraform", icon: "layers" }
     ],
-    image: "/images/projects/infrabot.webp",
+    image: "/images/projects/infrabot.jpg",
     featured: false,
     completedAt: "2024-03-22T00:00:00Z",
     highlights: [
@@ -129,7 +129,7 @@ export const projectsData: Project[] = [
       { name: "PostgreSQL", icon: "database" },
       { name: "Redis", icon: "database" }
     ],
-    image: "/images/projects/ecomarket.webp",
+    image: "/images/projects/ecomarket.jpg",
     liveUrl: "https://ecomarket.demo",
     featured: false,
     completedAt: "2023-11-05T00:00:00Z",

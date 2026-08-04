@@ -42,7 +42,7 @@ export default function SkillsPage() {
 
   return (
     <>
-      <div className="pt-24 pb-8 bg-slate-50 dark:bg-slate-900/50">
+      <div className="pt-24 pb-8">
         <div className="container mx-auto px-4 max-w-6xl">
           <Breadcrumbs
             items={[

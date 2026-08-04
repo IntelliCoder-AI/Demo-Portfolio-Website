@@ -124,6 +124,10 @@ export default function RootLayout({
       <body className="min-h-screen font-sans antialiased">
         <ThemeProvider>
           <ClientProviders>
+            <div className="bg-noise" aria-hidden="true" />
+            <div className="bg-grid" aria-hidden="true" />
+            <div className="aurora-bg" aria-hidden="true" />
+
             {/* Skip to content link for accessibility */}
             <a
               href="#main-content"
@@ -136,7 +140,7 @@ export default function RootLayout({
             <Navbar />
 
             {/* Main content */}
-            <main id="main-content" className="min-h-screen">
+            <main id="main-content" className="min-h-screen relative z-10 flex flex-col">
               {children}
             </main>
 

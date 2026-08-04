@@ -47,7 +47,7 @@ export default function ExperiencePage() {
         </Container>
       </Section>
 
-      <Section className="py-20 bg-slate-50 dark:bg-[#0F1D32]/50 border-t border-slate-200 dark:border-slate-800">
+      <Section className="py-20 border-t border-slate-200 dark:border-slate-800">
         <Container>
           <div className="flex flex-col items-center justify-center text-center max-w-2xl mx-auto space-y-8">
             <h2 className="text-3xl font-bold text-slate-900 dark:text-slate-100">Looking for more details?</h2>

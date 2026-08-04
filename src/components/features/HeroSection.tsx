@@ -29,7 +29,7 @@ export function HeroSection() {
   const subtitle = "Software Engineer | Python Full Stack Developer | AWS Cloud Enthusiast";
 
   return (
-    <section className="relative pt-24 pb-12 min-h-screen flex flex-col justify-center items-center text-center px-4 overflow-hidden bg-gradient-to-b from-[#FFFDF8] to-[#F7F3ED] dark:from-[#0F1D32] dark:to-[#162742]">
+    <section className="relative pt-24 pb-12 min-h-screen flex flex-col justify-center items-center text-center px-4 overflow-hidden">
       {/* Background elements */}
       <div className="absolute inset-0 z-0 overflow-hidden pointer-events-none">
         <motion.div 
@@ -75,16 +75,12 @@ export function HeroSection() {
         </motion.p>
 
         <motion.div variants={itemVariants} className="flex flex-wrap gap-4 justify-center mb-16">
-          <Link href="/projects" passHref legacyBehavior>
-            <Button size="lg" className="bg-gradient-to-r from-[#B8860B] to-[#D4A843] hover:opacity-90 text-white border-0 shadow-lg shadow-amber-500/25">
-              View Projects
-            </Button>
-          </Link>
-          <Link href="/contact" passHref legacyBehavior>
-            <Button variant="outline" size="lg" className="border-[#B8860B]/50 text-[#B8860B] dark:text-[#D4A843] dark:border-[#D4A843]/50 hover:bg-[#B8860B]/10 dark:hover:bg-[#D4A843]/10">
-              Contact Me
-            </Button>
-          </Link>
+          <Button href="/projects" size="lg" className="bg-gradient-to-r from-[#B8860B] to-[#D4A843] hover:opacity-90 text-white border-0 shadow-lg shadow-amber-500/25">
+            View Projects
+          </Button>
+          <Button href="/contact" size="lg" variant="outline" className="border-slate-300 dark:border-slate-700 bg-white/50 dark:bg-[#1C2F4A]/50 backdrop-blur-sm hover:bg-white dark:hover:bg-[#1C2F4A]">
+            Contact Me
+          </Button>
         </motion.div>
 
         <motion.div variants={itemVariants} className="grid grid-cols-1 md:grid-cols-3 gap-8 w-full max-w-3xl mb-12 border-y border-slate-200 dark:border-slate-800 py-8">

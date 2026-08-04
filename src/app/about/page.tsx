@@ -14,7 +14,7 @@ export const metadata: Metadata = {
 export default function AboutPage() {
   return (
     <>
-      <div className="pt-24 pb-8 bg-slate-50 dark:bg-slate-900/50">
+      <div className="pt-24 pb-8">
         <div className="container mx-auto px-4 max-w-6xl">
           <Breadcrumbs
             items={[
@@ -84,7 +84,7 @@ export default function AboutPage() {
         </div>
       </Section>
 
-      <Section id="philosophy" className="py-16 md:py-24 bg-white dark:bg-[#0F1D32]">
+      <Section id="philosophy" className="py-16 md:py-24">
         <div className="container mx-auto px-4 max-w-6xl">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold mb-4 text-[#1E293B] dark:text-[#F1F5F9]">
@@ -139,7 +139,7 @@ export default function AboutPage() {
         </div>
       </Section>
 
-      <Section id="beyond-code" className="py-16 md:py-24 bg-slate-50 dark:bg-slate-900/30">
+      <Section id="beyond-code" className="py-16 md:py-24">
         <div className="container mx-auto px-4 max-w-6xl">
           <div className="flex flex-col md:flex-row gap-12 items-center">
             <div className="md:w-1/3">

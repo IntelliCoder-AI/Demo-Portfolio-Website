@@ -4,7 +4,7 @@ import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { Menu } from 'lucide-react';
-import { ThemeToggle } from '@/components/ui/ThemeToggle';
+
 import { MobileMenu } from './MobileMenu';
 import { cn } from '@/lib/utils';
 // You'll need to create this data file if it doesn't exist
@@ -57,7 +57,7 @@ export const Navbar = () => {
           "fixed top-0 left-0 right-0 z-50 transition-all duration-300",
           isVisible ? "translate-y-0" : "-translate-y-full",
           isScrolled 
-            ? "bg-white/70 dark:bg-[#0F1D32]/70 backdrop-blur-md shadow-sm border-b border-slate-200/50 dark:border-white/10" 
+            ? "bg-[var(--nav-bg)] backdrop-blur-md shadow-sm border-b border-[var(--nav-border)]" 
             : "bg-transparent"
         )}
       >
@@ -97,8 +97,6 @@ export const Navbar = () => {
 
             {/* Right section */}
             <div className="flex items-center gap-4">
-              <ThemeToggle />
-              
               <button
                 onClick={() => setMobileMenuOpen(true)}
                 className="p-2 lg:hidden text-slate-600 dark:text-slate-300 hover:text-[#B8860B] dark:hover:text-[#D4A843] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#B8860B]/50 rounded-lg"

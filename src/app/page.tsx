@@ -25,7 +25,7 @@ export default function Home() {
       
       <TechStack />
 
-      <Section id="featured-projects" className="bg-slate-50 dark:bg-[#0F1D32]">
+      <Section id="featured-projects">
         <div className="mb-12 flex flex-col items-center justify-between gap-4 md:flex-row">
           <div>
             <h2 className="text-3xl font-bold tracking-tight text-slate-900 dark:text-slate-100 sm:text-4xl">
@@ -75,7 +75,7 @@ export default function Home() {
         </div>
       </Section>
 
-      <Section id="testimonials" className="bg-white dark:bg-[#0F1D32]">
+      <Section id="testimonials">
         <div className="mb-12 text-center">
           <h2 className="text-3xl font-bold tracking-tight text-slate-900 dark:text-slate-100 sm:text-4xl">
             Client Testimonials
@@ -88,7 +88,7 @@ export default function Home() {
         <TestimonialSlider testimonials={testimonialsData} />
       </Section>
 
-      <Section id="cta" className="bg-slate-50 dark:bg-slate-900/50">
+      <Section id="cta">
         <div className="flex flex-col items-center text-center">
           <h2 className="text-3xl font-bold tracking-tight text-slate-900 dark:text-slate-100 sm:text-4xl">
             Let's Work Together

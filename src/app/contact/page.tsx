@@ -14,7 +14,7 @@ export const metadata: Metadata = {
 
 export default function ContactPage() {
   return (
-    <div className="relative min-h-screen overflow-hidden bg-[#FFFDF8] dark:bg-[#0F1D32]">
+    <div className="relative min-h-screen overflow-hidden">
       {/* Background Decor */}
       <div className="absolute top-0 right-0 -z-10 opacity-30">
         <GradientBlob color="primary" />

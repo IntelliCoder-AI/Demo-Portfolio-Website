@@ -5,7 +5,7 @@ import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { motion, AnimatePresence } from 'framer-motion';
 import { X } from 'lucide-react';
-import { ThemeToggle } from '@/components/ui/ThemeToggle';
+
 import { cn } from '@/lib/utils';
 
 export interface MobileMenuProps {
@@ -47,7 +47,7 @@ export const MobileMenu: React.FC<MobileMenuProps> = ({ isOpen, onClose, navItem
             animate={{ x: 0 }}
             exit={{ x: '100%' }}
             transition={{ type: 'spring', damping: 25, stiffness: 200 }}
-            className="fixed top-0 right-0 bottom-0 w-[80%] max-w-sm bg-white dark:bg-[#0F1D32] shadow-2xl z-[70] flex flex-col lg:hidden border-l border-slate-200 dark:border-slate-800"
+            className="fixed top-0 right-0 bottom-0 w-[80%] max-w-sm bg-[var(--bg-card)] shadow-2xl z-[70] flex flex-col lg:hidden border-l border-[var(--border-color)]"
           >
             <div className="flex items-center justify-between p-6 border-b border-slate-200 dark:border-slate-800">
               <span className="text-xl font-bold bg-gradient-to-r from-[#B8860B] to-[#D4A843] bg-clip-text text-transparent">
@@ -88,10 +88,6 @@ export const MobileMenu: React.FC<MobileMenuProps> = ({ isOpen, onClose, navItem
               })}
             </div>
 
-            <div className="p-6 border-t border-slate-200 dark:border-slate-800 mt-auto flex items-center justify-between">
-              <span className="text-sm text-slate-500 font-medium">Switch Theme</span>
-              <ThemeToggle />
-            </div>
           </motion.div>
         </>
       )}

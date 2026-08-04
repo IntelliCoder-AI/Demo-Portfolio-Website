@@ -60,9 +60,9 @@ export default async function BlogPostPage({ params }: Props) {
   const fullUrl = `https://portfolio.com/blog/${post.slug}`;
 
   return (
-    <article className="min-h-screen bg-[#FFFDF8] dark:bg-[#0F1D32]">
+    <article className="min-h-screen">
       {/* Header section with light background */}
-      <div className="pt-24 pb-12 bg-slate-50 dark:bg-slate-900/50 border-b border-slate-200 dark:border-slate-800">
+      <div className="pt-24 pb-12 border-b border-slate-200 dark:border-slate-800">
         <div className="container mx-auto px-4 max-w-4xl">
           <Link 
             href="/blog"
@@ -158,7 +158,7 @@ export default async function BlogPostPage({ params }: Props) {
 
       {/* Related Posts */}
       {relatedPosts.length > 0 && (
-        <Section id="related-posts" className="py-16 bg-slate-50 dark:bg-slate-900/30 border-t border-slate-200 dark:border-slate-800">
+        <Section id="related-posts" className="py-16 border-t border-slate-200 dark:border-slate-800">
           <div className="container mx-auto px-4 max-w-6xl">
             <h2 className="text-3xl font-bold text-[#1E293B] dark:text-[#F1F5F9] mb-8">
               Related Articles

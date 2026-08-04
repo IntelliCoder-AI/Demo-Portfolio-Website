@@ -18,7 +18,7 @@ export const metadata: Metadata = {
 export default function ResumePage() {
   return (
     <>
-      <div className="pt-24 pb-8 bg-slate-50 dark:bg-[#0F1D32] print:hidden">
+      <div className="pt-24 pb-8 print:hidden">
         <div className="container mx-auto px-4 max-w-5xl">
           <Breadcrumbs
             items={[
@@ -29,7 +29,7 @@ export default function ResumePage() {
         </div>
       </div>
 
-      <Section id="resume" className="py-12 md:py-16 bg-slate-50 dark:bg-[#0F1D32] print:py-0 print:bg-white">
+      <Section id="resume" className="py-12 md:py-16 print:py-0 print:bg-white">
         <div className="container mx-auto px-4 max-w-5xl">
           
           {/* Action Bar */}
