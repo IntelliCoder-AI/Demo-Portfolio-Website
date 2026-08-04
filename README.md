@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # 🚀 Radhe — Developer Portfolio
 
 A **production-quality, multi-page portfolio website** built with modern web technologies. Features a luxurious Midnight Sapphire + Gold design, smooth animations, dark/light mode, and a fully responsive layout.
@@ -219,3 +220,7 @@ This project is open source and available under the [MIT License](LICENSE).
 ---
 
 Built with ❤️ by **Radhe**
+=======
+# Demo-Portfolio-Website
+Demo Portfolio Website
+>>>>>>> f27518b36270b0f8284cd0db96126b298a516d5b
