@@ -29,7 +29,7 @@ export function HeroSection() {
   const subtitle = "Software Engineer | Python Full Stack Developer | AWS Cloud Enthusiast";
 
   return (
-    <section className="relative min-h-[calc(100vh-80px)] flex flex-col justify-center items-center text-center px-4 overflow-hidden bg-gradient-to-b from-[#FFFDF8] to-[#F7F3ED] dark:from-[#0F1D32] dark:to-[#162742]">
+    <section className="relative pt-24 pb-12 min-h-screen flex flex-col justify-center items-center text-center px-4 overflow-hidden bg-gradient-to-b from-[#FFFDF8] to-[#F7F3ED] dark:from-[#0F1D32] dark:to-[#162742]">
       {/* Background elements */}
       <div className="absolute inset-0 z-0 overflow-hidden pointer-events-none">
         <motion.div 
