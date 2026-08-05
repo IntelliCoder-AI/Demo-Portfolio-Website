@@ -1,9 +1,7 @@
-<<<<<<< HEAD
+
 # 🚀 Radhe — Software Developer Portfolio
 
 A **production-quality, multi-page portfolio website** built with modern web technologies. Features a luxurious Midnight Sapphire + Gold design, smooth animations, dark/light mode, and a fully responsive layout.
-
-![Portfolio Preview](/public/og-image.png)
 
 ---
 
