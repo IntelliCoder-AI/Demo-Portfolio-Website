@@ -28,7 +28,7 @@ export function SkillCard({ skill, index }: SkillCardProps) {
   const iconName = skill.icon 
     ? skill.icon.split('-').map(part => part.charAt(0).toUpperCase() + part.slice(1)).join('')
     : '';
-  const IconComponent = iconName ? (LucideIcons as Record<string, React.ComponentType<{ size?: number }>>)[iconName] : null;
+  const IconComponent = iconName ? (LucideIcons as unknown as Record<string, React.ComponentType<{ size?: number }>>)[iconName] : null;
 
   return (
     <motion.div
