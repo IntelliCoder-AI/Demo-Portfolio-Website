@@ -1,6 +1,5 @@
 import { render, screen } from '@testing-library/react';
 import { describe, it, expect, vi } from 'vitest';
-import userEvent from '@testing-library/user-event';
 import { Button } from '../Button';
 
 // Mock next/link to render a simple anchor tag
