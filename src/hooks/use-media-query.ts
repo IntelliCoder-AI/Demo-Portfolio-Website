@@ -14,12 +14,11 @@ export function useMediaQuery(query: string): boolean {
     const media = window.matchMedia(query);
     
     // Set initial value
-    if (media.matches !== matches) {
-      setMatches(media.matches);
-    }
+    // eslint-disable-next-line react-hooks/set-state-in-effect
+    setMatches(media.matches);
 
-    const listener = () => {
-      setMatches(media.matches);
+    const listener = (e: MediaQueryListEvent) => {
+      setMatches(e.matches);
     };
 
     media.addEventListener('change', listener);
@@ -27,7 +26,7 @@ export function useMediaQuery(query: string): boolean {
     return () => {
       media.removeEventListener('change', listener);
     };
-  }, [matches, query]);
+  }, [query]);
 
   return matches;
 }

@@ -1,8 +1,6 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import Link from 'next/link';
-import { cn } from '@/lib/utils';
 import { Button } from '@/components/ui/Button';
 import { SocialLinks } from './SocialLinks';
 
@@ -54,7 +52,7 @@ export function HeroSection() {
           variants={itemVariants}
           className="text-5xl md:text-7xl font-extrabold tracking-tight mb-6 text-slate-900 dark:text-slate-100"
         >
-          Hi, I'm <span className="bg-clip-text text-transparent bg-gradient-to-r from-[#B8860B] to-[#D4A843] dark:from-[#D4A843] dark:to-[#FDE08B]">Radhe</span>
+          Hi, I&apos;m <span className="bg-clip-text text-transparent bg-gradient-to-r from-[#B8860B] to-[#D4A843] dark:from-[#D4A843] dark:to-[#FDE08B]">Radhe</span>
         </motion.h1>
 
         <motion.div variants={itemVariants} className="text-xl md:text-2xl font-medium text-slate-600 dark:text-slate-300 mb-8 max-w-2xl">

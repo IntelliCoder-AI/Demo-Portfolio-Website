@@ -44,7 +44,7 @@ export default function Home() {
         </div>
 
         <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
-          {featuredProjects.map((project, index) => (
+          {featuredProjects.map((project) => (
             <ProjectCard key={project.id} project={project} />
           ))}
         </div>
@@ -91,11 +91,11 @@ export default function Home() {
       <Section id="cta">
         <div className="flex flex-col items-center text-center">
           <h2 className="text-3xl font-bold tracking-tight text-slate-900 dark:text-slate-100 sm:text-4xl">
-            Let's Work Together
+            Let&apos;s Work Together
           </h2>
           <p className="mt-4 max-w-2xl text-lg text-slate-600 dark:text-slate-400">
-            I'm currently available for freelance work and open to new full-time opportunities.
-            If you have a project that needs some creative touch, I'd love to hear about it.
+            I&apos;m currently available for freelance work and open to new full-time opportunities.
+            If you have a project that needs some creative touch, I&apos;d love to hear about it.
           </p>
           <div className="mt-8">
             <Link href="/contact">

@@ -40,7 +40,7 @@ export function ContactForm() {
       } else {
         setSubmitStatus({ type: 'error', message: result.message || 'Failed to send message. Please try again.' });
       }
-    } catch (error) {
+    } catch {
       setSubmitStatus({ type: 'error', message: 'An unexpected error occurred. Please try again later.' });
     } finally {
       setIsSubmitting(false);

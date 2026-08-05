@@ -1,6 +1,3 @@
-'use client';
-
-import { motion } from 'framer-motion';
 import { TimelineItem } from './TimelineItem';
 import type { Experience } from '@/types';
 

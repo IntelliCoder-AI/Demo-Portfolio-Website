@@ -18,7 +18,7 @@ export function TestimonialCard({ testimonial }: TestimonialCardProps) {
       </div>
       
       <blockquote className="flex-grow text-slate-600 dark:text-slate-300 italic mb-6 relative z-10 leading-relaxed text-lg">
-        "{testimonial.content}"
+        &quot;{testimonial.content}&quot;
       </blockquote>
       
       <div className="flex items-center gap-4 mt-auto pt-6 border-t border-slate-200 dark:border-slate-800 relative z-10">

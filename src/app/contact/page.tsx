@@ -41,7 +41,7 @@ export default function ContactPage() {
               Get In Touch
             </h1>
             <p className="text-lg text-slate-600 dark:text-slate-400">
-              Whether you have a question, a project proposal, or just want to say hi, I'll try my best to get back to you!
+              Whether you have a question, a project proposal, or just want to say hi, I&apos;ll try my best to get back to you!
             </p>
           </div>
 

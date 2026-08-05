@@ -1,10 +1,10 @@
 'use client';
 
 import { useState } from 'react';
-import { Share2, Link2, Check } from 'lucide-react';
+import { Link2, Check } from 'lucide-react';
 import { Button } from '@/components/ui/Button';
 
-export function ShareButton({ title, url }: { title: string; url: string }) {
+export function ShareButton({ url }: { title?: string; url: string }) {
   const [copied, setCopied] = useState(false);
 
   const handleCopy = async () => {

@@ -58,7 +58,7 @@ export default function BlogPageClient() {
             <div className="mb-16">
               <h2 className="text-2xl font-bold mb-6 text-slate-900 dark:text-slate-100">Featured Post</h2>
               <div className="w-full md:w-2/3 lg:w-1/2">
-                <BlogCard post={featuredPost as any} />
+                <BlogCard post={featuredPost} />
               </div>
             </div>
           )}
@@ -86,7 +86,7 @@ export default function BlogPageClient() {
                     exit={{ opacity: 0, scale: 0.9 }}
                     transition={{ duration: 0.3 }}
                   >
-                    <BlogCard post={post as any} />
+                    <BlogCard post={post} />
                   </motion.div>
                 ))}
               </AnimatePresence>

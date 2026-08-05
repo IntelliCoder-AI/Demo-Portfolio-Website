@@ -48,13 +48,13 @@ export default function AboutPage() {
               </h1>
               <div className="prose prose-lg dark:prose-invert max-w-none text-slate-700 dark:text-slate-300">
                 <p className="mb-4">
-                  Hello! I'm {personalInfo.name}, a {personalInfo.title} based in {personalInfo.location}.
+                  Hello! I&apos;m {personalInfo.name}, a {personalInfo.title} based in {personalInfo.location}.
                 </p>
                 <p className="mb-4">
                   {personalInfo.bio}
                 </p>
                 <p className="mb-8">
-                  My journey in software development is driven by a profound curiosity and a desire to build solutions that not only solve complex problems but also deliver exceptional user experiences. I thrive in environments that challenge me to learn and adapt, whether it's architecting a robust backend in Python and AWS or crafting a fluid, responsive frontend with Next.js and Tailwind CSS.
+                  My journey in software development is driven by a profound curiosity and a desire to build solutions that not only solve complex problems but also deliver exceptional user experiences. I thrive in environments that challenge me to learn and adapt, whether it&apos;s architecting a robust backend in Python and AWS or crafting a fluid, responsive frontend with Next.js and Tailwind CSS.
                 </p>
               </div>
 
@@ -69,7 +69,7 @@ export default function AboutPage() {
                   href="/contact"
                   className="inline-flex justify-center items-center px-6 py-3 bg-white dark:bg-[#1a2a40] text-[#1E293B] dark:text-[#F1F5F9] border border-slate-200 dark:border-slate-700 rounded-lg font-medium hover:bg-slate-50 dark:hover:bg-slate-800 transition-colors"
                 >
-                  Let's Connect
+                  Let&apos;s Connect
                 </Link>
               </div>
               
@@ -147,7 +147,7 @@ export default function AboutPage() {
                 Beyond Code
               </h2>
               <p className="text-lg text-slate-600 dark:text-slate-400 mb-6">
-                When I'm not staring at a terminal or debugging, you can find me exploring other passions that keep me inspired and balanced.
+                When I&apos;m not staring at a terminal or debugging, you can find me exploring other passions that keep me inspired and balanced.
               </p>
             </div>
             <div className="md:w-2/3 grid grid-cols-2 sm:grid-cols-3 gap-4 w-full">

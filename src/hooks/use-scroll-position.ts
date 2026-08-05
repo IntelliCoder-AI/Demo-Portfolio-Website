@@ -34,6 +34,7 @@ export function useScrollPosition(): ScrollPosition {
     };
 
     // Set initial position
+    // eslint-disable-next-line react-hooks/set-state-in-effect
     setScrollPosition({
       x: window.scrollX,
       y: window.scrollY,

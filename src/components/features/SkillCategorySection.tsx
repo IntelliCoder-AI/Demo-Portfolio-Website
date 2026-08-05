@@ -12,7 +12,7 @@ interface SkillCategorySectionProps {
   icon?: ReactNode;
 }
 
-export function SkillCategorySection({ category, skills, title, icon }: SkillCategorySectionProps) {
+export function SkillCategorySection({ category: _category, skills, title, icon }: SkillCategorySectionProps) {
   if (!skills || skills.length === 0) return null;
 
   return (

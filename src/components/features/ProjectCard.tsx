@@ -6,7 +6,6 @@ import Link from 'next/link';
 import { ExternalLink, Code2 } from 'lucide-react';
 import { Card } from '@/components/ui/Card';
 import { Badge } from '@/components/ui/Badge';
-import { cn } from '@/lib/utils';
 import type { Project } from '@/types';
 
 interface ProjectCardProps {

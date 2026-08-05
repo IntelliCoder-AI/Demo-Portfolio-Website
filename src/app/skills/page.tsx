@@ -10,19 +10,10 @@ export const metadata: Metadata = {
   description: 'Technical skills, tools, and technologies I work with.',
 };
 
-const iconMap: Record<string, any> = {
-  'Frontend': Globe,
-  'Backend': Server,
-  'Cloud': Cloud,
-  'Database': Database,
-  'AI/ML': Brain,
-  'Tools': Wrench,
-};
-
 export default function SkillsPage() {
   // Group skills by category ID
   const groupedSkills = skills.reduce((acc, skill) => {
-    const categoryKey = typeof skill.category === 'string' ? skill.category : (skill.category as any).id;
+    const categoryKey = typeof skill.category === 'string' ? skill.category : (skill.category as { id: string }).id;
     if (!acc[categoryKey]) {
       acc[categoryKey] = [];
     }

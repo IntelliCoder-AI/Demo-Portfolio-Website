@@ -13,7 +13,7 @@ interface TimelineItemProps {
   isLast: boolean;
 }
 
-export function TimelineItem({ experience, index, isLast }: TimelineItemProps) {
+export function TimelineItem({ experience, index, isLast: _isLast }: TimelineItemProps) {
   const isEven = index % 2 === 0;
 
   return (
