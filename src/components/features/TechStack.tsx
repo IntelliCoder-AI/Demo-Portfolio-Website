@@ -7,13 +7,15 @@ export function TechStack() {
   const [isPaused, setIsPaused] = useState(false);
 
   const row1 = [
-    'React', 'Next.js', 'TypeScript', 'Tailwind CSS', 'Framer Motion', 
-    'Redux', 'GraphQL', 'Jest', 'Cypress', 'Vite'
+    'React', 'Next.js', 'HTML', 'CSS', 'Tailwind CSS',
+    'AWS', 'Terraform', 'Docker', 'Kubernetes (Basics)', 'Git & GitHub',
+    'GitHub Actions', 'Ansible', 'Linux', 'Windows', 'VS Code', 'Jupyter Notebook', 'Google Colab'
   ];
   
   const row2 = [
-    'Python', 'FastAPI', 'Django', 'Node.js', 'Express',
-    'PostgreSQL', 'MongoDB', 'Redis', 'AWS', 'Docker', 'Linux'
+    'Python', 'Java', 'FastAPI', 'Flask', 'REST APIs', 'SQL',
+    'MySQL', 'PostgreSQL', 'NumPy', 'Pandas', 'Matplotlib', 'Seaborn',
+    'LangChain', 'LangGraph', 'CrewAI', 'AI', 'ML', 'DL'
   ];
 
   return (

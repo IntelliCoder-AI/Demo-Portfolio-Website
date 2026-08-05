@@ -4,6 +4,8 @@ import { motion } from 'framer-motion';
 import { Card } from '@/components/ui/Card';
 import type { Skill } from '@/types';
 
+import * as LucideIcons from 'lucide-react';
+
 interface SkillCardProps {
   skill: Skill;
   index: number;
@@ -22,6 +24,12 @@ export function SkillCard({ skill, index }: SkillCardProps) {
 
   const percentage = getLevelPercentage(skill.level);
 
+  // Convert icon string to PascalCase for Lucide React
+  const iconName = skill.icon 
+    ? skill.icon.split('-').map(part => part.charAt(0).toUpperCase() + part.slice(1)).join('')
+    : '';
+  const IconComponent = iconName ? (LucideIcons as any)[iconName] : null;
+
   return (
     <motion.div
       initial={{ opacity: 0, y: 20 }}
@@ -32,8 +40,8 @@ export function SkillCard({ skill, index }: SkillCardProps) {
       className="group"
     >
       <Card className="p-5 h-full bg-white/10 dark:bg-slate-900/30 backdrop-blur-xl border border-white/20 dark:border-white/10 shadow-lg hover:shadow-xl hover:shadow-[#B8860B]/10 dark:hover:shadow-[#D4A843]/10 transition-all rounded-2xl flex items-center gap-4">
-        <div className="w-12 h-12 rounded-full bg-slate-100 dark:bg-slate-800 flex items-center justify-center text-xl font-bold text-[#B8860B] dark:text-[#D4A843] shadow-inner group-hover:scale-110 transition-transform">
-          {skill.icon ? skill.icon : skill.name.charAt(0)}
+        <div className="w-12 h-12 rounded-full bg-slate-100 dark:bg-slate-800 flex items-center justify-center text-[#B8860B] dark:text-[#D4A843] shadow-inner group-hover:scale-110 transition-transform">
+          {IconComponent ? <IconComponent size={24} /> : <span className="text-xl font-bold">{skill.name.charAt(0)}</span>}
         </div>
         
         <div className="flex-1">

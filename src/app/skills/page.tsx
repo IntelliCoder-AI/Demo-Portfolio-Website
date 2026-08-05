@@ -23,11 +23,11 @@ export default function SkillsPage() {
 
   // Assuming we map known category IDs to names/icons
   const categories = [
-    { id: 'frontend', name: 'Frontend', icon: Globe },
-    { id: 'backend', name: 'Backend', icon: Server },
     { id: 'cloud', name: 'Cloud & DevOps', icon: Cloud },
-    { id: 'database', name: 'Databases', icon: Database },
     { id: 'ai-ml', name: 'AI & Machine Learning', icon: Brain },
+    { id: 'backend', name: 'Backend', icon: Server },
+    { id: 'frontend', name: 'Frontend', icon: Globe },
+    { id: 'database', name: 'Databases', icon: Database },
     { id: 'tools', name: 'Tools & Utilities', icon: Wrench },
   ];
 
