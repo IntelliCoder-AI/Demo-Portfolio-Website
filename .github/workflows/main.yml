@@ -10,7 +10,7 @@ on:
 
 jobs:
   build:
-    name: Lint & Build
+    name: Lint, Test & Build
     runs-on: ubuntu-latest
 
     steps:
@@ -28,6 +28,9 @@ jobs:
 
       - name: Run ESLint
         run: npm run lint
+
+      - name: Run Tests
+        run: npm test
 
       - name: Build Next.js Application
         run: npm run build
